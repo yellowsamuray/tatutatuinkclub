@@ -45,39 +45,45 @@ let innerIndex = 0
 
 //Frame button functionallity
 let newSourceFrame = ()=>{
-    if(filePathFrame[frameIndex] == undefined){
-        frameIndex = 0
-    }
     let newPath = filePathFrame[frameIndex]
     imgResultEl.src=newPath
 }
 
 let prevImgFrame = () =>{
     frameIndex--
+    if(filePathFrame[frameIndex] == undefined){
+        frameIndex = 0
+    }
     newSourceFrame()
 }
 
 let nextImgFrame = () =>{
     frameIndex++
+    if(filePathFrame[frameIndex] == undefined){
+        frameIndex = filePathFrame.length-1
+    }
     newSourceFrame()
 }
 
 // inner frame button functionallity
 let newSourceInner = ()=>{
-    if(filePathInner[innerIndex] == undefined){
-        innerIndex = 0
-    }
     let newPath = filePathInner[innerIndex]
     imgInnerEl.src=newPath
 }
 
 let prevImgInner = () =>{
     innerIndex--
+    if(filePathInner[innerIndex] == undefined){
+        innerIndex = 0
+    }
     newSourceInner()
 }
 
 let nextImgInner = () =>{
     innerIndex++
+    if(filePathInner[innerIndex] == undefined){
+        innerIndex = filePathInner.length-1
+    }
     newSourceInner()
 }
 
