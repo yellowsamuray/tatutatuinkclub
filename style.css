@@ -7,12 +7,25 @@
 .header{
     text-align: center;
     background-color: #b1d2c5;
+
 }
 
 p{
     display: inline;
-    padding: 10px;
+    text-align:center;
+    padding: 0px 10px;
 }
+
+.btn-frame{
+    display: flex;
+    flex-flow: column wrap;
+    /* justify-content: center; */
+    gap: 15px;
+}
+h4{
+    text-align: center;
+}
+
 .header #logo{
     width: 50px;
 }
@@ -23,6 +36,10 @@ p{
     justify-content: center;
     height: auto;
     gap: 30px;
+}
+
+.center{
+    text-align: center;
 }
 
 .img-stack{
@@ -38,10 +55,9 @@ p{
 }
 #img-inner-el{
     position: absolute;
-    padding: 40px;
     align-self: center;
     object-fit: contain;
-    z-index : -1;
+    /* z-index : -1; */
 }
 
 button{
@@ -51,7 +67,7 @@ button{
     border-radius: 8px;
     background-color: #b1d2c5;
 }
-/* 
+
 .frame-btn{
     display: flex;
     justify-content:space-evenly;
@@ -59,4 +75,4 @@ button{
 .inner-btn{
     display: flex;
     justify-content:space-evenly;
-} */
+}
