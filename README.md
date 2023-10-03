@@ -38,3 +38,5 @@ Thank you very much for visiting. If you have any idea to add on the app feel fr
 <a href="raymondchia007@gmail.com" target="_blank">raymondchia007@gmail.com</a>.
 
 Cheers!
+
+P.S. to open the link in new tab [CTRL+click (on Windows and Linux) or CMD+click (on MacOS)]
